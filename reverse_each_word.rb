@@ -7,8 +7,8 @@ def reverse_each_word(sentence)
   return collector.join(" ")
 end
 
-# def reverse_each_word(sentence)
-#   new_sentence = sentence.split(" ")
-#   new_sentence.collect {|word| word.reverse}
-#   return new_sentence.join(" ")
-# end
+def reverse_each_word(sentence)
+  new_sentence = sentence.split(" ")
+  new_sentence.collect {|word| word.reverse}
+  return new_sentence.join(" ")
+end
