@@ -10,7 +10,7 @@ end
 def reverse_each_word(sentence)
   new_sentence = sentence.split(" ")
   new_sentence.map do |word|
-    collector << word.reverse
+    word.reverse
   end
-   return collector.join(" ")
+   return new_sentence.join(" ")
 end
