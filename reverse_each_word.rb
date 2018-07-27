@@ -5,9 +5,10 @@ def reverse_each_word(sentence)
     collector << word.reverse
   end
   return collector.join(" ")
-  
-  new_sentence = sentence.split(" ")
-  new_sentence.collect {|word| word.reverse}
-  return new_sentence.join(" ")
 end
 
+
+def reverse_each_word(sentence)
+  sentence_array = sentence.split(" ")
+  sentence_array.collect {|word| word.reverse}.join(" ")
+end
